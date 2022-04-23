@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;    
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* div{
+    background-color: #00ff37;
+    width: 50%;
+    height: 100px;
+} */
+.caja{
+    width: 50%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#caja1{
+    background-color: #00ff37;
+    
+}
+#caja2{
+    background-color: hsl(22, 100%, 50%);
+   
+}
+#caja3{
+    background-color: #246bd5;
+    
+    border: #000 8px solid;
+}
+
+.alinear_centro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondo_amarillo{
+    background-color: #eaff00 !important;
+}
