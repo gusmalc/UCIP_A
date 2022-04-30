@@ -1,0 +1,43 @@
+.cajas{
+    width: 200px;
+    height: 50px;
+}
+
+#caja1{
+    background-color: #f00;
+}
+#caja2{
+    position: relative;
+    z-index: 99;
+    left: 50px;
+    top: 10px;
+    background-color: #6fff00;
+}
+#caja4{
+    position: relative;
+    background-color: #000;
+    height: 200px;
+}
+#caja3{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+}
+
+#caja5{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background: #9cc809;
+}
+
+#caja6{
+    position: sticky;
+    top: 10px;
+    background: #1139a7;
+}
