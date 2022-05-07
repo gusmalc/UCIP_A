@@ -1,0 +1,16 @@
+
+.el-pos{
+    width: 300px;
+    height: 100px;
+    background: rgb(1,89,124);
+    background: radial-gradient(circle, rgba(1,89,124,0.9864320728291317) 0%, rgba(255,0,181,0.8687850140056023) 89%, rgba(1,107,129,1) 100%);
+}
+
+#main{
+    min-height: 1000px;
+}
+
+#elem1{
+    position: sticky;
+    top: 0px;
+}
