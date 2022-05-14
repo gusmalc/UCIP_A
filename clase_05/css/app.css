@@ -1,0 +1,17 @@
+.btn_def{
+    border: solid 1px #222;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #e94040;
+}
+.btn_def:hover{
+    background-color: #f02222;
+}
+
+#resultado{
+    border: solid 1px #222;
+    min-height: 200px;
+    padding: 30px;
+}
