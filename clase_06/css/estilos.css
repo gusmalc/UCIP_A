@@ -1,0 +1,14 @@
+main{
+    background: #0ff;
+}
+
+h1{
+    font-size: 4rem ;
+}
+
+.card_servicio{
+    width: 100%;
+    height: 200px;
+    background: #f00;
+    margin-bottom: 10px;
+}
