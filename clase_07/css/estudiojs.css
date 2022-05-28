@@ -1,0 +1,15 @@
+.box{
+    width: 200px;
+    height: 40px;
+    background: #222;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.box:hover{
+    background: #646363;
+}
+
+#resultado{
+    font-size: 2rem;
+}
