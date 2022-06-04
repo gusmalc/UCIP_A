@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picola APP</title>
+    <link rel="stylesheet" href="css/picola_app.css">
+</head>
+<body>
+    <div id="app">
+        <div id="izquierda">
+            <div id="ini_partido">INICIAR PARTIDO</div>
+            <hr>
+            <table id="tabla_jugadores">
+                <tr>
+                    <td>Jugador 1</td>
+                    <td>Jugador 2</td>
+                </tr>
+                <tr>
+                    <td><div id="total1">0</div></td>
+                    <td><div id="total2">0</div></td>
+                </tr>
+            </table>
+            <br>
+            <div id="ganador"></div>
+        </div>
+        <div id="derecha">
+            <div id="tablero">
+                <div class="casilla" data-val="">?</div>
+                <div class="casilla" data-val="">?</div>
+                <div class="casilla" data-val="">?</div>
+                <div class="casilla" data-val="">?</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/picola_app.js?a=1"></script>
+</body>
+</html>

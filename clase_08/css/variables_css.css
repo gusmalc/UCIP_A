@@ -1,0 +1,56 @@
+:root{
+    --colorA: #fff;
+    --colorB: #222;
+    --color1: #f00;
+    --color2: #33ff00;
+    --fuente1: 'Times New Roman', Times, serif;
+    --fuente2: 'Montserrat', sans-serif;
+   
+}
+
+body{
+    background: var(--colorB);
+    color: var(--colorA);
+}
+
+h1{
+    color: var(--color2);
+    font-family: var(--fuente1);
+}
+p{
+    font-family: var(--fuente2);
+    color: var(--color2);
+    font-weight: 100;
+}
+.miboton{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background: var(--color1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorA);
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+    font-size: 1rem;
+}
+/* .miboton:hover{
+    background: var(--color2);
+    width: 300px;
+    height: 100px;
+    font-size: 4rem;
+   
+    transform: rotate(45deg);
+} */
+
+.rotar{
+    background: var(--color2);
+    width: 300px;
+    height: 100px;
+    font-size: 4rem;
+   
+    transform: rotate(30deg);
+}
