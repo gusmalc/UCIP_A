@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+#contenedor{
+    width: 90%;
+    background: #ccc;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "top top top top"
+                            "serv1 serv1 serv2 serv2"
+                            "serv3 serv3 serv4 serv4"
+                            "pub1 pub1 pub1 pub1"
+                            "pub2 pub2 pub2 pub2"
+                            "pie pie pie pie" ;
+    gap: 10px;
+}
+
+#top{
+    background: #f00;
+    grid-area: top;
+    
+}
+#serv1{
+    background: #f00;
+    grid-area: serv1;
+    padding: 20px;
+}
+#serv2{
+    background: #f00;
+    grid-area: serv2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#serv3{
+    background: #f00;
+    grid-area: serv3;
+}
+#serv4{
+    background: #f00;
+    grid-area: serv4;
+}
+#pub1{
+    background: #f00;
+    grid-area: pub1;
+}
+#pub2{
+    background: #f00;
+    grid-area: pub2;
+}
+#pie{
+    background: #f00;
+    grid-area: pie;
+}
+
+
+@media (min-width: 576px) {
+    
+}  
+@media (min-width: 768px) {
+    #contenedor{
+        
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "top top top top"
+                                "serv1 serv2 serv3 serv4"
+                                "pub1 pub1 pub2 pub2"
+                                "pie pie pie pie" ;
+        
+    }
+    
+}  
+@media (min-width: 992px) {
+    
+}  
+@media (min-width: 1200px) {
+    
+}
