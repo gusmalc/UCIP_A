@@ -1,0 +1,9 @@
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+tbody tr{
+    cursor: pointer;
+}

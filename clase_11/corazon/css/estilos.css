@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+body, html{
+    padding: 0;
+    margin: 0;
+}
+#box{
+    background: #222;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#corazon{
+    width: 200px;
+    height: 200px;
+    background: #f00;
+    position: relative;
+   transform: rotate(45deg);
+   animation-name: abc;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+#corazon::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #f00;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px
+}
+#corazon::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #f00;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px
+}
+
+@keyframes abc{
+    0%{
+        transform: rotate(45deg) scale(0.5);
+
+    }
+    50%{
+        transform: rotate(360deg) scale(0.5);
+    }
+    100%{
+        transform: rotate(45deg) scale(1.5);
+    }
+}
