@@ -6,29 +6,31 @@ $enviado = "no";
 
 
 // definir variables
-$nombre = $email = $telefono = $asunto = $consulta = "";
+$nombre = $email = $telefono = $asunto = $consulta = $aaa = "";
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
 }
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nombre = test_input($_POST["nombre"]);
   $email = test_input($_POST["email"]);
   $telefono = test_input($_POST["telefono"]);
   $asunto = test_input($_POST["asunto"]);
   $consulta = test_input($_POST["consulta"]);
+  $aaa = test_input($_POST["aaa"]);
   $enviado = "si";
 }
 
 if($enviado == "si"){
 
-$para  = 'gustavo@malcotti.com';// . ', '; // atención a la coma
+$para  = 'mimail@abc.com';// . ', '; // atención a la coma
 //$para .= 'wez@example.com';
 
 // título
-$titulo = 'Consulta';
+$titulo = 'Consulta desda abc.com';
 
 // mensaje
 $mensaje = "

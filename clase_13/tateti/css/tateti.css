@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+body, html{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.dp-container {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size:1rem;
+    border: none;
+    border-radius: 0px;
+    background: #318fe7;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #166ec0;
+}
+
+#app{
+    display: flex;
+    flex-wrap: wrap; 
+}
+#info{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 30px;
+}
+#muestra_ficha{
+    margin-top: 20px;
+    width: calc(60vw/8);
+    height: calc(60vw/8);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#juego{
+    width: 100%;
+    background: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#turno{
+    font-size: 3rem;
+    color: #318fe7;;
+}
+#datos-partido{
+    display: none;
+}
+#info-partido{
+    display: none;
+    margin-top: 50px;
+}
+#info-ganador{
+    margin-top: 50px;
+    display: none;
+    padding: 15px;
+    background: #318fe7;
+    color: #fff;
+}
+#nom-ganador{
+    font-size: 3rem;
+}
+#empate{
+    font-size: 3rem;
+}
+.dp-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dp-input input{
+    width: 200px;
+}
+
+#fondo-tablero{
+    position: relative;
+    width: 60vw;
+    height:60vw;
+    background: #fff;
+}
+/* #linea-ganador{
+    position: absolute;
+    
+    width: 30vw;
+    height: 16px;
+    background: #fff;
+    display: none;
+} */
+/* .linea-0{
+    top: 5vw;
+}
+.linea-1{
+    top: 15vw;
+}
+.linea-2{
+    top: 25vw;
+}
+.linea-3{
+    top: 15vw;
+    left: -10vw;   
+    transform: rotate(90deg);    
+}
+.linea-4{
+    top: 15vw;
+    transform: rotate(90deg);
+}
+.linea-5{
+    top: 15vw;
+    left: 10vw;
+    transform: rotate(90deg);
+}
+.linea-6{
+    top: 14.5vw;
+    transform: rotate(45deg);
+}
+.linea-7{
+   
+    top: 15vw;
+    transform: rotate(-45deg);
+} */
+.casillas{
+    background: #222;
+    width: calc(60vw/3);
+    height: calc(60vw/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fichaO{
+    width: 80%;
+    height: 80%;
+    border: 10px solid #f00;
+    border-radius: 50%;
+}
+.fichaX {
+    width: 90%;
+    height: 10px;
+    background: #0f0;
+    transform: rotate(45deg);
+}
+ .fichaX>div{
+    width: 100%;
+    height: 10px;
+    background: #0f0;
+    transform: rotate(90deg);
+}
+#tablero{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    grid-template-rows: repeat(3 , 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+ 
+@media (min-width: 992px) {
+    #app{        
+        flex-wrap: nowrap;        
+    } 
+    #info{
+        width: 35%;
+        min-height: 100vh;
+    }
+    #juego{
+        width: 65%;
+        min-height: 100vh;
+    }
+    #fondo-tablero{
+        width: 30vw;
+        height:30vw;
+        
+    }
+    .casillas{       
+        width: calc(30vw/3);
+        height: calc(30vw/3);
+       
+    }
+}  
